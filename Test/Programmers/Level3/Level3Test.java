@@ -26,5 +26,9 @@ public class Level3Test {
         LineCombination lc = new LineCombination();
         System.out.println(Arrays.toString(lc.setAlign(4, 6)));
     }
-
+    @Test
+    public void CaesarTest() {
+        Caesar c = new Caesar();
+        assertThat(c.caesar("BcOQobnQQu WQEzNbNiJKYji BgeJidOfeGQLgDyWJkjqQztt", 40), is("PqCEcpbEEi KESnBpBwXYMxw PusXwrCtsUEZuRmKXyxeEnhh"));
+    }
 }
