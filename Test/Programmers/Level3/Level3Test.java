@@ -31,4 +31,9 @@ public class Level3Test {
         Caesar c = new Caesar();
         assertThat(c.caesar("BcOQobnQQu WQEzNbNiJKYji BgeJidOfeGQLgDyWJkjqQztt", 40), is("PqCEcpbEEi KESnBpBwXYMxw PusXwrCtsUEZuRmKXyxeEnhh"));
     }
+    @Test
+    public void NextBigNumberTest() {
+        NextBigNumber nb = new NextBigNumber();
+        assertThat(nb.nextBigNumber(78), is(83));
+    }
 }
