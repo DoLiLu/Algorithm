@@ -36,4 +36,10 @@ public class Level3Test {
         NextBigNumber nb = new NextBigNumber();
         assertThat(nb.nextBigNumber(78), is(83));
     }
+    @Test
+    public void NoOvertimeTest() {
+        NoOvertime c = new NoOvertime();
+        int []test = {4,3,3};
+        assertThat(c.noOvertime(4,test), is(12));
+    }
 }
