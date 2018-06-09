@@ -42,4 +42,9 @@ public class Level3Test {
         int []test = {4,3,3};
         assertThat(c.noOvertime(4,test), is(12));
     }
+    @Test
+    public void JumpCaseTest() {
+        JumpCase jp = new JumpCase();
+        assertThat(jp.jumpCase(4), is(5));
+    }
 }
