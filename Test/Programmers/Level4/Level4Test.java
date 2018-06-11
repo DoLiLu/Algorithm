@@ -19,4 +19,10 @@ public class Level4Test {
         assertThat(Arrays.toString(bs.bestSet(3, 13)), is("[4, 4, 5]"));
         assertThat(Arrays.toString(bs.bestSet(3, 15)), is("[5, 5, 5]"));
     }
+    @Test
+    public void ExpressionsTest(){
+        Expressions expressions = new Expressions();
+        assertThat(expressions.expressions(1927), is(4));
+    }
+
 }
