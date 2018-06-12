@@ -24,5 +24,17 @@ public class Level4Test {
         Expressions expressions = new Expressions();
         assertThat(expressions.expressions(1927), is(4));
     }
+    @Test
+    public void FindLargestSquareTest(){
+        FindLargestSquare largest = new FindLargestSquare();
+        char [][]board ={
+                {'O','O','O','O','O'},
+                {'O','O','O','O','O'},
+                {'O','O','O','O','O'},
+                {'O','O','O','O','O'},
+                {'O','O','O','O','O'}};
+
+        assertThat(largest.findLargestSquare(board), is(25));
+    }
 
 }
