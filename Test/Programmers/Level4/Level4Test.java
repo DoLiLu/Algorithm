@@ -42,5 +42,10 @@ public class Level4Test {
         int[][] test = { { 7, 10, 1, 1}, {7, 7, 1, 10}, {3, 3, 5, 2}, {8, 10, 4, 2}, {6, 1, 8, 9}, {1, 3, 7, 3}, {2, 10, 3, 5}, {2, 1, 5, 6}, {4, 2, 1, 7}, {3, 5, 2, 7} };
         assertThat(c.hopscotch(test, 10), is(78));
     }
+    @Test
+    public void TilingTest(){
+        Tiling t = new Tiling();
+        assertThat(t.tiling(10), is(89));
+    }
 
 }
