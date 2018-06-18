@@ -47,5 +47,10 @@ public class Level4Test {
         Tiling t = new Tiling();
         assertThat(t.tiling(10), is(89));
     }
+    @Test
+    public void Tiling3Test(){
+        Tiling3 t = new Tiling3();
+        assertThat(t.tiling3(4), is(11));
+    }
 
 }
