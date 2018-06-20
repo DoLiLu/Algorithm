@@ -11,4 +11,9 @@ public class Lesson3Test {
         int []a = {1,2,4,5,6,7,8,9,10,11,12,13,14,15};
         assertThat(PermMissingElem.solution(a), is(3));
     }
+    @Test
+    public void TapeEquilibriumTest(){
+        int []a = {3,1,2,4,3};
+        assertThat(TapeEquilibrium.solution(a), is(1));
+    }
 }
