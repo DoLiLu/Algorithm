@@ -11,4 +11,9 @@ public class Lesson4Test {
         int []A = {1,3,1,4,2,3,5,4};
         assertThat(FrogRiverOne.solution(5,A ), is(6));
     }
+    @Test
+    public void MissingIntegerTest(){
+        int []A = {0,1,2,3,5};
+        assertThat(MissingInteger.solution(A), is(4));
+    }
 }
