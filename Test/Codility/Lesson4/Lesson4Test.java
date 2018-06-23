@@ -16,4 +16,9 @@ public class Lesson4Test {
         int []A = {0,1,2,3,5};
         assertThat(MissingInteger.solution(A), is(4));
     }
+    @Test
+    public void PermCheckTest(){
+        int []A = {1,3,4};
+        assertThat(PermCheck.solution(A), is(0));
+    }
 }
