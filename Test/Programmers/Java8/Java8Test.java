@@ -12,4 +12,10 @@ public class Java8Test {
         ReverseInt ri = new ReverseInt();
         assertThat(ri.reverseInt(118372), is(873211));
     }
+
+    @Test
+    public void HarshadNumberTest() {
+        HarshadNumber hn = new HarshadNumber();
+        System.out.println(hn.isHarshad(18));
+    }
 }
