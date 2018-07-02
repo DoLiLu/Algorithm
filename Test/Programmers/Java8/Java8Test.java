@@ -16,6 +16,12 @@ public class Java8Test {
     @Test
     public void HarshadNumberTest() {
         HarshadNumber hn = new HarshadNumber();
-        System.out.println(hn.isHarshad(18));
+        assertThat(hn.isHarshad(18), is(true));
+    }
+    @Test
+    public void DayNameTest() {
+        DayName dayName = new DayName();
+        int a=5, b=24;
+        assertThat(dayName.getDayName(a,b), is("TUE"));
     }
 }
