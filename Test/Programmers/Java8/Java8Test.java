@@ -31,4 +31,10 @@ public class Java8Test {
         int[] array = {5, 9, 7, 10};
         System.out.println( Arrays.toString( div.divisible(array, 5) ));
     }
+    @Test
+    public void GetMinMaxStringTest() {
+        String str = "-12 -13 -17 -5 -7 14 14 18 4 5 5 8";
+        GetMinMaxString minMax = new GetMinMaxString();
+        assertThat(minMax.getMinMaxString(str), is ("-17 18"));
+    }
 }
