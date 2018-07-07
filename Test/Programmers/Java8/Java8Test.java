@@ -37,4 +37,11 @@ public class Java8Test {
         GetMinMaxString minMax = new GetMinMaxString();
         assertThat(minMax.getMinMaxString(str), is ("-17 18"));
     }
+    @Test
+    public void GetMinSumTest() {
+        GetMinSum minSum = new GetMinSum();
+        int []A = {1,2};
+        int []B = {3,4};
+        assertThat(minSum.getMinSum(A,B), is (10));
+    }
 }
