@@ -44,4 +44,12 @@ public class Java8Test {
         int []B = {3,4};
         assertThat(minSum.getMinSum(A,B), is (10));
     }
+    @Test
+    public void GetMeanTest() {
+        GetMean getMean = new GetMean();
+        int []X = {5,4,3};
+        int []Y = {40,23,37};
+        assertThat(getMean.getMean(X), is (4));
+        assertThat(getMean.getMean(Y), is (33));
+    }
 }
