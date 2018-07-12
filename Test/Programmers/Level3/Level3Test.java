@@ -47,4 +47,9 @@ public class Level3Test {
         JumpCase jp = new JumpCase();
         assertThat(jp.jumpCase(4), is(5));
     }
+    @Test
+    public void ReverseStrTest() {
+        ReverseStr reverseStrint = new ReverseStr();
+        assertThat(reverseStrint.reverseStr("Zbcdefga"), is("gfedcbaZ"));
+    }
 }
