@@ -52,4 +52,10 @@ public class Level3Test {
         ReverseStr reverseStrint = new ReverseStr();
         assertThat(reverseStrint.reverseStr("Zbcdefga"), is("gfedcbaZ"));
     }
+    @Test
+    public void WaterMelonTest() {
+        WaterMelon wm = new WaterMelon();
+        assertThat(wm.watermelon(3), is("수박수"));
+        assertThat(wm.watermelon(4), is("수박수박"));
+    }
 }
